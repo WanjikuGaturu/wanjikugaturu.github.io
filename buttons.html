@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>colors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+			margin:50px;
+		}
+
+		button{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		#colorchange{
+			background-color:;
+			border:5px;
+			border-style:dashed;
+			height: 400px;
+			border-radius: 5px;
+		}
+		h2{
+			margin-top:100px;
+			font-size:50px;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1 class="text-center">Press any button to pick a color</h1>
+
+<!-- The section with the buttons starts here-->
+	<div class="row">
+		<div class="col-sm-1 col-md-2 "><button onclick="changeColorPrimary()" class="btn btn-lg btn-block btn-primary "></button></div>
+
+		<div class="col-sm-1 col-md-2"><button  onclick="changeColorDanger()" class="btn btn-lg btn-block btn-danger"></button></div>
+
+		<div class="col-sm-1 col-md-2"><button  onclick="changeColorWarning()" class="btn btn-lg  btn-block btn-warning"></button></div>
+
+		<div class="col-sm-1 col-md-2"><button onclick="changeColorSuccess()" class="btn btn-lg  btn-block btn-success"></button></div>
+
+		<div class="col-sm-1 col-md-2"><button onclick="changeColorSecondary()" class="btn btn-lg btn-block btn-secondary"></button></div>
+
+		<div class="col-sm-1 col-md-2"><button onclick="changeColorInfo()" class="btn btn-lg  btn-block btn-info"></button></div>
+
+
+	</div><br>
+<!--The colors will be displayed here-->
+<div id="colorchange">
+
+</div><br>
+
+<div class="col-sm-offset-4 col-sm-2 col-md-4"><button onclick="resetColor()" class="btn btn-block btn-center">Reset</button></div>
+ 
+
+</div>
+
+<script>
+
+	function changeColorPrimary(){
+		document.getElementById("colorchange").style.backgroundColor ="#0000ff";
+		document.getElementById("colorchange").style.borderColor ="#0000ff";
+		
+	}
+
+	function changeColorDanger(){
+		document.getElementById("colorchange").style.backgroundColor ="#EE3927";
+		document.getElementById("colorchange").style.borderColor ="#EE3927";
+	}
+
+	function changeColorWarning(){
+		document.getElementById("colorchange").style.backgroundColor ="#ffbf00";
+		document.getElementById("colorchange").style.borderColor ="#ffbf00";
+	}
+
+	function changeColorSuccess(){
+		document.getElementById("colorchange").style.backgroundColor ="#1F9347";
+		document.getElementById("colorchange").style.borderColor ="#1F9347";
+	}
+
+	function changeColorSecondary(){
+		document.getElementById("colorchange").style.backgroundColor ="#DED8D7";
+		document.getElementById("colorchange").style.borderColor ="#DED8D7";
+	}
+
+	function changeColorInfo(){
+		document.getElementById("colorchange").style.backgroundColor ="#16CCD8";
+		document.getElementById("colorchange").style.borderColor ="#16CCD8";
+	}
+    
+    function resetColor(){
+		document.getElementById("colorchange").style.backgroundColor ="#ffffff";
+		document.getElementById("colorchange").style.borderColor ="#000000";
+	}
+
+</script>
+</body>
+</html>
